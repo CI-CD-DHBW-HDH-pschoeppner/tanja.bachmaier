@@ -26,7 +26,8 @@ export function validateTodo(todo: TodoItem, todos: TodoItem[]): boolean {
   // Check if todo is contained in todos array (case-insensitive)
   const todoValue = todo.value.toLowerCase();
   const isDuplicate = todos.some(
-    (existingTodo) => existingTodo.value.toLowerCase() === todoValue);
+    (existingTodo) => existingTodo.value.toLowerCase() === todoValue
+  );
   if (isDuplicate) {
     return false;
   }
@@ -38,12 +39,13 @@ export function validateTodo(todo: TodoItem, todos: TodoItem[]): boolean {
 // capitalize the first letter of the todo
 export function formatTodo(todo: TodoItem): TodoItem {
   //get the value of the todo and set the first letter (index 0) to upper case
-  const capitalizedValue = todo.value.charAt(0).toUpperCase() + todo.value.slice(1)
+  const capitalizedValue =
+    todo.value.charAt(0).toUpperCase() + todo.value.slice(1);
   return {
     id: todo.id,
     value: capitalizedValue,
-    done: todo.done
-  }
+    done: todo.done,
+  };
 }
 
 // generate a random rgb color
