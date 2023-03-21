@@ -40,9 +40,9 @@ export function formatTodo(todo: TodoItem): TodoItem {
   //get the value of the todo and set the first letter (index 0) to upper case
   const capitalizedValue = todo.value.charAt(0).toUpperCase() + todo.value.slice(1)
   return {
-    id: "",
+    id: todo.id,
     value: capitalizedValue,
-    done: false
+    done: todo.done
   }
 }
 
