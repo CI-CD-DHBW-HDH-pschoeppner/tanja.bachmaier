@@ -3,7 +3,7 @@
 ## Setup
 
 ### Notiz für Bewertung: es sollte alles auf main-branch sein. Edit-branch ist nur als kleines Backup für den Notfall sein.
-### Docker Image pushen funktioniert nicht, wegen Berechtingungsproblemen, die aber nicht durch Repo-Ersteller gefixt werden können.
+### Docker Image pushen funktioniert nicht, wegen Berechtingungsproblemen.
 
 ### Klone dieses Repository
 
