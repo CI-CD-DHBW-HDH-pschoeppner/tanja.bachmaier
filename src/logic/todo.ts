@@ -1,7 +1,5 @@
 import { writable } from "svelte/store";
 
-//test if commit
-
 export class TodoItem {
   id = "";
   value = "";
