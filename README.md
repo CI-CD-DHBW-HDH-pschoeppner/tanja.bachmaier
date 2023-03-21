@@ -2,6 +2,8 @@
 
 ## Setup
 
+### Notiz für Bewertung: es sollte alles auf main-branch sein. Edit-branch ist nur als kleines Backup für den Notfall sein.
+
 ### Klone dieses Repository
 
 1. Klone das Repository
