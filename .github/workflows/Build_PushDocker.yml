@@ -25,9 +25,9 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Run Prettier
-        run: npx prettier --write
-
+      - name: Run Prettier on ts
+        run: npx prettier --write "src/**/*.ts"
+        
       - name: Check formatting
         run: npm run format:check
 
