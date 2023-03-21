@@ -30,4 +30,10 @@ describe("generateColor", () => {
       match?.every((val) => parseInt(val) >= 50 && parseInt(val) <= 150)
     ).toBe(true);
   });
+
+  it("does not return the same value twice" , () => {
+    const color1 = generateColor();
+    const color2 = generateColor();
+    expect(color1 != color2);
+  });
 });
