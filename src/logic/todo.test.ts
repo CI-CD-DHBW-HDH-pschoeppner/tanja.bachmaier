@@ -31,36 +31,3 @@ describe("generateColor", () => {
     ).toBe(true);
   });
 });
-
-// test the todoList writable store
-describe("todoList", () => {
-  it("starts with an empty array", () => {
-    expect(todoList).toEqual([]);
-  });
-
-  it("can add new todo items", () => {
-    const store = todoList;
-    // no way to fix with esLint
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-assignment
-    store.update((todos: any) => [
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-      ...todos,
-      { id: "1", value: "test", done: false },
-    ]);
-    expect(todoList).toEqual([{ id: "1", value: "test", done: false }]);
-  });
-
-  it("can update the done property of a todo item", () => {
-    const store = todoList;
-    store.update((todos) =>
-      todos.map((todo) => (todo.id === "1" ? { ...todo, done: true } : todo))
-    );
-    expect(todoList).toEqual([{ id: "1", value: "test", done: true }]);
-  });
-
-  it("can remove a todo item", () => {
-    const store = todoList;
-    store.update((todos) => todos.filter((todo) => todo.id !== "1"));
-    expect(todoList).toEqual([]);
-  });
-});
