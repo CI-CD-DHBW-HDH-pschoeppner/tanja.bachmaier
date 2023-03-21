@@ -1,4 +1,4 @@
-import { formatTodo, generateColor, todoList } from "./todo";
+import { formatTodo, generateColor } from "./todo";
 
 // test the formatTodo function
 describe("formatTodo", () => {
