@@ -37,3 +37,7 @@ describe("generateColor", () => {
     expect(color1 != color2);
   });
 });
+
+// Es fehlen Tests für
+// * generateID
+// * validateTodo
